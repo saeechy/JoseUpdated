@@ -1,0 +1,28 @@
+<div class="bg"></div>
+<div class="bg bg2"></div>
+
+<div class="container fade-in pt-5">
+  <figure class="text-center my-5">
+    <h1 class="display-3 playfair-display-sc-bold">My Works</h1>
+  </figure>
+
+  <!-- PROJECT CARDS -->
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let item of content">
+      <div class="card shadow-sm h-100">
+        <img [src]="item.img" class="card-img-top" alt="{{ item.title }}">
+
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+
+          <p class="card-text">{{ item.desc }}</p>
+
+          <p><strong>Time Span:</strong> {{ item.timespan }}</p>
+          <p><strong>Languages:</strong> {{ item.languages }}</p>
+          <p><strong>Tools:</strong> {{ item.tools }}</p>
+          <p><strong>Role:</strong> {{ item.role }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

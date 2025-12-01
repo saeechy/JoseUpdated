@@ -1,0 +1,42 @@
+.navbar a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+    text-shadow: 0 0 10px #000000;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: rgb(41, 49, 51);
+    text-shadow: 0 0 10px #ffffff;
+}
+.navbar-nav .nav-link:hover {
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .navbar-collapse.show {
+    margin-bottom: 220px; /* pushes content DOWN */
+  }
+}
+@media (max-width: 992px) {
+  .navbar .navbar-collapse {
+    position: static !important;
+    width: 100%;
+  }
+
+  .navbar-collapse.show {
+    margin-bottom: 20px; /* your push-down hack */
+  }
+}
+
+
+
+
+
+
+
+
+
+

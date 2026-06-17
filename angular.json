@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularPortfolio": {
+    "SaeCh": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AngularPortfolio:build:production"
+              "buildTarget": "SaeCh:build:production"
             },
             "development": {
-              "buildTarget": "AngularPortfolio:build:development"
+              "buildTarget": "SaeCh:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "AngularPortfolio:build"
+            "buildTarget": "SaeCh:build"
           }
         },
         "test": {
@@ -81,7 +81,7 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
+              "src/icon.ico",
               "src/assets"
             ],
             "styles": [

@@ -14,6 +14,14 @@
 
             <h1 class="mb-4 text-center playfair-display-sc-bold">Work with me!</h1>
 
+            <!-- Minimal success / error alerts -->
+            <div *ngIf="sent" class="alert alert-success py-2 text-center" role="alert">
+              Message sent
+            </div>
+            <div *ngIf="errorMsg" class="alert alert-danger py-2 text-center" role="alert">
+              {{ errorMsg }}
+            </div>
+
             <form (ngSubmit)="submitForm()">
               <div class="mb-3">
                 <label class="form-label">Full Name</label>
@@ -34,8 +42,8 @@
               </div>
 
               <div class="text-center">
-                <button type="submit" class="btn btn-outline-dark btn-lg px-5">
-                  Submit
+                <button type="submit" class="btn btn-outline-dark btn-lg px-5" [disabled]="sending">
+                  {{ sending ? 'Sending...' : 'Submit' }}
                 </button>
               </div>
             </form>
